@@ -1,0 +1,85 @@
+*{margin:0;}
+	
+/* En esta seccion le digo que escale de nav a ul y ul, por que existen 2 ul el primero que se pone el titulo del menu y el siguienete es el submenu */
+nav ul ul {
+	display: none;
+}
+
+
+/* En esta seecion le digo que se pase a nav despues al ul y al final a la lista y que quiere decir esto que cuando pase el mouse se  despliegue el submenu*/
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+	nav ul {
+	background: #0080FF; 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+
+	nav ul li {
+	float: left;
+}
+	nav ul li:hover {
+		background: #0080FF;
+			background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+	}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	
+	nav ul li a {
+		display: block; padding: 25px 40px;
+		color: #757575; text-decoration: none;
+	}
+
+	nav ul ul {
+	background: #5f6975; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 40px;
+			color: #fff;
+		}	
+			nav ul ul li a:hover {
+				background: #4b545f;
+			}
+body{
+	background:lightgray;
+	color: gray;
+margin: 0px; padding: 0px
+}
+
+	header{
+	border:10px solid black;
+	display: inline-block;
+	padding: 20px;
+	height:126px;
+}
+
+	div.pie{
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0 0 0px 0px #00a1d2 inset;
+}
+
+#contenedor{
+	max-width: 1125px;
+	margin:0 auto;
+	background: lightgray;
+}
+
